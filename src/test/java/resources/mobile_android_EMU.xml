@@ -1,0 +1,19 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Test Suite" thread-count="2" parallel="tests">
+
+    <test name="Android 1">
+        <parameter name="Device" value="emulator-5554"/>
+        <classes>
+            <class name="tests.ProductsPageTest"/>
+        </classes>
+    </test>
+
+    <test name="Android 2">
+        <parameter name="Device" value="emulator-5556"/>
+        <classes>
+            <class name="tests.ProductsPageTest"/>
+        </classes>
+    </test>
+
+</suite>
